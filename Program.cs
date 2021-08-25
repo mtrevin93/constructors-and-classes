@@ -13,11 +13,14 @@ namespace Classes
             Employee HowardSchultz = new Employee("Howard","Schultz","Barista",DateTime.Parse("1/1/2009"));
             Employee SteveJobs = new Employee("Steve","Jobs","Lead Turtleneck-Wearer,",DateTime.Parse("3/1/2015"));
             // Assign the employees to the company
-
+            SeeSharper.Employees.Add(JaneDoe);
+            SeeSharper.Employees.Add(HowardSchultz);
+            SeeSharper.Employees.Add(SteveJobs);
             /*
                 Iterate the company's employee list and generate the
                 simple report shown above
             */
+            SeeSharper.ListEmployees();
         }
     }
 }
